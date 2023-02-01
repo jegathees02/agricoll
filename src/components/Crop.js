@@ -28,10 +28,10 @@ function Crop(props) {
               <td>Days for Maturation</td>
               <td>: {props.matu}</td>
             </tr>
-            <tr>
-              {/* <button className="crop-plan-button">Get Plan</button> */}
+            {/* <tr>
+              <button className="crop-plan-button">Get Plan</button>
               <Link to={props.path} >GET PLAN</Link>
-            </tr>
+            </tr> */}
           </table>
         </div>
       </div>

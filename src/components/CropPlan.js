@@ -5,7 +5,7 @@ import Crop from "./Crop";
 import { Link, Router, useNavigate } from "react-router-dom";
 // import "./Crop.css";
 import '../components/css/Crop.css';
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import Navbar from "./navbar";
 function CropPlan() {
   const [Details, useDetails] = useState([

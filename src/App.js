@@ -1,5 +1,6 @@
 import "./styles.css";
 import NavigationBar from "./components/navbar";
+// import CropPlan from "./components/CropPlan";
 import CropPlan from "./components/CropPlan";
 import Onion from "./components/onion";
 import Tomato from "./components/tomato";
@@ -13,10 +14,11 @@ export default function App() {
     <div className="App">
       {/* <NavigationBar/> */}
       {/* <Weather/> */}
-      <Dashboard/>
+      {/* <Dashboard/> */}
       {/* <Onion /> */}
       {/* <Tomato/> */}
       {/* <CropPlan/> */}
+      <CropPlan/>
     </div>
   );
 }
