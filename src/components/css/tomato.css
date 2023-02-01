@@ -1,0 +1,22 @@
+.tomato-card{
+    border: 1px solid black;
+    box-shadow: 3px 2px 20px 1px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+}
+.tomato-description{
+    width: 80%;
+    /* text-align: center; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    /* content: justify; */
+    text-align: justify;
+    font-weight: 520;
+    font-size: 25px;
+}
+
+/* h3 > tomato-description{
+    font-weight: 800;
+} */

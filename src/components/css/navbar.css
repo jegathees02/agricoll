@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap'); */
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+.nav-main{
+    display: inline;
+    /* float: left; */
+    align-items: center;
+}
+.nav-left{
+    /* width: 20%; */
+    float: left;
+    display: flex;
+}
+.nav-right {
+    float: right;
+    width: 50%;
+}
+
+.nav-list {
+    list-style: none;
+    /* display: ; */
+    display: flex;
+    float: left;
+    /* margin-top: 2%; */
+    /* margin-left: 50px; */
+    /* margin-right: 5px; */
+}
+.nav-ele {
+    margin-left:60px;
+    margin-top: 4%;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-ele :hover {
+    text-decoration: underline;
+}
+
+/* .nav-list {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    color: blue;
+    transition: all .35s ease;
+
+    &::before {
+        content: ""; 
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s; 
+        transition: all 0.3s ease-in-out 0s; 
+    }   
+
+    &:hover {
+        color: yellow;
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }   
+    }   
+}
+ */
+
+ .nav-list{ 
+    /* margin: 150px auto 0;  */
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  .nav-ele { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  .heading{
+margin-top: 10%;
+font-size:35px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(23, 92, 69);
+  }
+  

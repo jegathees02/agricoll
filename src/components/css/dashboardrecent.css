@@ -1,0 +1,23 @@
+
+.recent-card-img {
+    height: -150;
+    width: -150;
+    text-align: center;
+}
+.dash-recent-main-txt{
+    font-weight: 100;
+    /* margin-top: 500; */
+}
+
+.card-body{
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 10px;
+    cursor: pointer;
+    /* padding: 10px; */
+}
+
+/* .dash-recent-main{
+    padding: 10px;
+} */

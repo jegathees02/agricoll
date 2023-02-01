@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import NavigationBar from "./components/navbar";
+import CropPlan from "./components/CropPlan";
+import Onion from "./components/onion";
+import Tomato from "./components/tomato";
+// import Weather from "./components/pages/weather";
+import Dashboard from "./components/dashboard";
 
-function App() {
+import Weather from "./components/weather";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <NavigationBar/> */}
+      {/* <Weather/> */}
+      <Dashboard/>
+      {/* <Onion /> */}
+      {/* <Tomato/> */}
+      {/* <CropPlan/> */}
     </div>
   );
 }
-
-export default App;

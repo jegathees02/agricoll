@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.onion-container{
+    /* background-image: url("https://res.cloudinary.com/dkmm9khbp/image/upload/v1673960926/AGRICOL/onion-background_fspo4d.jpg"); */
+    /* background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; */
+}
+.onion-title-head {
+    font-weight: 700;
+}
+
+.onion-main {
+    border: 1px solid lavender;
+    /* justify-content: center; */
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+.onion-img {
+    height: 200px;
+    width: 250px;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+
+}
+.onion-content {
+    /* text-align: left; */
+    font-size: 50%;
+    
+}
+.onion-botanical-name,.onion-germination {
+    font-size: smaller;
+    font-weight: 200;
+}
+.onion-title {
+    color: wheat;
+    font-size: auto;
+    font-weight: 700;
+    font-style: initial;
+    font-display: bold;
+}
+.onion-para {
+    font-size: 25px;
+
+     font-family: serif;
+}
