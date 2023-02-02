@@ -1,6 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import "../components/css/dashboardrecent.css";
+import Tomato from "./tomato";
+// import { Link } from "react-router-dom";
+// import { Route } from "react-router-dom";
+// import Button from "react-bootstrap";
+import { Button } from "bootstrap";
 
 function DashBoardRecent() {
 
@@ -13,7 +18,7 @@ function DashBoardRecent() {
         {
             Img:  "https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167504/AGRICOL/Vegetable%20images/tomato_t2wvjr.jpg",
             Name:"Tomato",
-            source:""
+            source: "Tomato"
         },
         {
             Img: "https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167725/AGRICOL/Vegetable%20images/brinjal_ewudyw.jpg" ,
@@ -38,9 +43,15 @@ function DashBoardRecent() {
         {
             Img: "https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/beetroot_vlbh42.jpg" ,
             Name:"Beetroot",
-            source:"",
+            source:""
         }
     ];
+
+//     let navigate = useNavigate(props); 
+//   const routeChange = (props) =>{ 
+//     let path = {source}; 
+//     navigate(path);
+//   }
     
     return(
         <>
@@ -67,7 +78,14 @@ function DashBoardRecent() {
                                                 <img className="recent-card-img" style={ImageSize} src={props.Img} alt='card' />
                                                 <h5 className="h5">{props.Name}</h5>
                                                 <p className="card-text">{props.Degree}</p>
-                                                <a href="/" className="btn btn-primary">View Details</a>
+                                                {/* <Route path={props.source} className="btn btn-primary">View Details</Route> */}
+                                                {/* <Button color="primary" className="px-4"
+            onClick={navigate({props.source})}
+              >
+              Login
+            </Button> */}
+            {/* <button onClick={navigate(props.source)}>View Details</button> */}
+            <button href={props.source} >View</button>
                                             </div>
                                         </div>
                                     </Col>

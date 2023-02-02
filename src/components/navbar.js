@@ -308,10 +308,34 @@
 
 import React from 'react';
 import './css/navbar.css'
-function Navbar() {
-  const menu = ["Home","About_us","Community","Customer_Support"]
-  const menumap = menu.map((menus) => 
-    <li className='nav-ele'>{menus}</li>
+function Navbar(props) {
+  // const menu = ["Home","About_us","Community","Customer_Support"]
+  // const link = ["1","1","1","1"]
+  const menuse = [
+    {
+      page:"Home",
+      link:"/a"
+    },
+    {
+      page:"About_us",
+      link:"/b"
+    },
+    {
+      page : "Community",
+      link : "/c"
+    },
+    {
+      page : "Customer_Support",
+      link : "/d"
+    },
+    {
+      page : "Get Plan",
+      link : "/ad"
+    }
+  ]
+  const menumap = menuse.map((props) => 
+    <li className='nav-ele'><a className='nav-ele' href={props.link}>{props.page}</a></li>
+    // <a href={props.link} ><li className='nav-ele'>{props.page}</li></a>
   )
   const size = {
     height : 75,
@@ -328,8 +352,11 @@ function Navbar() {
           </div>
           <div className='nav-right'>
             <ul className='nav-list'>
-              {menumap}
+              <div className='nav-ele-link'>{menumap}</div>
             </ul>
+            <div className='navbar-get-your-plan'>
+              <a href='/a'>GET PLAN</a>
+            </div>
           </div>
         </nav>
       </div>

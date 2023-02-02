@@ -16,9 +16,9 @@ export default function App() {
       {/* <Weather/> */}
       {/* <Dashboard/> */}
       {/* <Onion /> */}
-      {/* <Tomato/> */}
+      <Tomato/>
       {/* <CropPlan/> */}
-      <CropPlan/>
+      {/* <CropPlan/> */}
     </div>
   );
 }

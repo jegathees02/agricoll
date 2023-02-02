@@ -106,7 +106,7 @@ const WeatherComponent = (props) => {
             </WeatherContainer>
             <Location>{`${weather?.name}, ${weather?.sys?.country}`}</Location>
 
-            <WeatherInfoLabel>Weather Info</WeatherInfoLabel>
+            <WeatherInfoLabel>Weather Details</WeatherInfoLabel>
             <WeatherInfoContainer>
                 <WeatherInfoComponent name={isDay ? "sunset" : "sunrise"}
                                       value={`${getTime(weather?.sys[isDay ? "sunset" : "sunrise"])}`}/>

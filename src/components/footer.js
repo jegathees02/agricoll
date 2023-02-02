@@ -25,7 +25,7 @@ export default function App() {
           <a href='' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='/a' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
           </a>
         </div>
@@ -37,27 +37,26 @@ export default function App() {
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                Agricol
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                AI BASED GUIDING SYSTEM TO SUPPORT FARMERS
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>SERVICES</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                  CROP PLAN
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                  FERTILIZER DETAILS 
                 </a>
               </p>
-              <p>
+              {/* <p>
                 <a href='#!' className='text-reset'>
                   Vue
                 </a>
@@ -66,24 +65,24 @@ export default function App() {
                 <a href='#!' className='text-reset'>
                   Laravel
                 </a>
-              </p>
+              </p> */}
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Pricing
+                  CROP DETAILS
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Settings
+                  PROFILE
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Orders
+                  TERMS AND CONDITIONS
                 </a>
               </p>
               <p>
@@ -97,17 +96,17 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                COIMBATORE,TAMIL NADU
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                www.supremecoders.xyz
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> + 91 8526174471
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" /> + 91 9638254271
               </p>
             </MDBCol>
           </MDBRow>
@@ -117,7 +116,7 @@ export default function App() {
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2021 Copyright:
         <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+          www.supremecoders.xyz
         </a>
       </div>
     </MDBFooter>
