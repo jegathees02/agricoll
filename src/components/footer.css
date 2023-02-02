@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  /* margin-top: 5%; */
   font-weight: bold;
+}
+.footer-main{
+  margin-top: 15%;
 }
 
 .footer-social-media {

@@ -1,13 +1,17 @@
 import React from "react";
-import { Link as RouterLink } from 'react-router-dom'
+import { Link as RouterLink, useNavigate } from 'react-router-dom'
 import { Route } from "react-router-dom";
 import { ReactDOM } from "react";
 import { Link } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 // import '../src/Crop.css';
 import '../components/css/Crop.css';
 // onion import
 import Onion from "./onion";
+import { Button } from "@mui/material";
+// import { useNavigate } from "react-router-dom";
 function Crop(props) {
+  const navigate = useNavigate();
   return (
     <>
       <div className="maincrop" id="card">
@@ -28,10 +32,13 @@ function Crop(props) {
               <td>Days for Maturation</td>
               <td>: {props.matu}</td>
             </tr>
-            {/* <tr>
-              <button className="crop-plan-button">Get Plan</button>
-              <Link to={props.path} >GET PLAN</Link>
-            </tr> */}
+            <tr>
+              {/* <button className="crop-plan-button">Get Plan</button> */}
+              {/* <Link to={props.path} >GET PLAN</Link> */}
+              <Button variant="contained" color="success" className="getplan-button" onClick={() => {
+                navigate("/tomato")
+              }} >Get Plan</Button>
+            </tr>
           </table>
         </div>
       </div>

@@ -1,17 +1,35 @@
 .dashboard-Weather{
     float: right;
     margin-right: 5%;
+    margin-top: 5%;
+}
+.dashboard-nav{
+    display: flex;
+}
+.dashboard-nav::after{
+    display: none;
+    content: "";
+    clear: both;
 }
 .dashboard-footer{
     float: left;
     margin-left: 7%;
+    margin-top: 4%;
     
 }
+.dashboard-getplan{
+    display: flex;
+    /* align-items: center; */
+    float: right;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
 .dashbaord-recent {
     float: left;
     width: 60%;
     margin-left: 2%;
-    margin-top: 0%;
+    margin-top: 2%;
     font-weight: 800;
     font-style: bold;
 }

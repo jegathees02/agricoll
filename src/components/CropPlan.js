@@ -88,7 +88,7 @@ function CropPlan() {
     </div>
       <div id="container">
         <div className="sideBar">
-          <h1>We Care for your crop</h1>
+          <h1 className="sideBar">We Care for your crop</h1>
         </div>
         <div className="cardHolder">
           <h1 className="heading-crop-plan">Your Plan</h1>

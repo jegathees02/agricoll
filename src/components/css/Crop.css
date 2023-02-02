@@ -2,6 +2,7 @@
   /* font-family: "Fira Sans", sans-serif; */
   margin: 0%;
   padding: 0%;
+  margin-top: 5%;
   /* box-sizing: border-box; */
 }
 #container {
@@ -12,26 +13,27 @@
   margin-right: 30px;
 }
 .sideBar {
-  width: 15%;
+  width: 25%;
   height: 100vh;
   padding: 20px;
-  position: fixed;
+  /* position: fixed; */
   color: white;
-  background: #a8ff78; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  font-weight: 800;
+  background: #a8ff78; 
+  /* background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78); */
+  /* background: linear-gradient(to right, #78ffd6, #a8ff78); */
 }
 .sideBar h1 {
   margin-top: 50%;
 }
 .cardHolder {
   padding: 20px;
-  width: 80%;
-  height: 100%;
+  width: 70%;
+  /* height: 100%; */
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin-left: 22%;
+  margin-left: %;
 }
 .cardHolder-card {
   width: 100%;
@@ -68,6 +70,12 @@
 table {
   color: gray;
 }
+/* .getplan-button{
+  padding-top: 2%;
+} */
+/* Button{
+  margin-top: 2%;
+} */
 .heading-crop-plan{
   margin-left: 0%;
 }

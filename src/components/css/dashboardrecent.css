@@ -8,6 +8,10 @@
     font-weight: 100;
     /* margin-top: 500; */
 }
+.dash-recent-main-txt{
+    font-weight: 700;
+    /* float: left; */
+}
 
 .card-body{
     border-radius: 10px;

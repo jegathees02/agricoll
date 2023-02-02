@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Link,Routes, Navigate } from 'react-rou
 import "../components/css/dashboardrecent.css";
 import Tomato from "./tomato";
 import { useNavigate } from 'react-router-dom';
+// import Button from 'react-bootstrap';
+import { Button } from '@mui/material';
 function DashBoardRecent() {
         const navigate=useNavigate();
     const ImageSize = {
@@ -83,10 +85,10 @@ function DashBoardRecent() {
                                     <h5 className="h5">Tomato</h5>
                                     {/* <p className="card-text"></p> */}
                                     {/* <Router> */}
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/tomato");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
                     
                                     {/* </Router> */}
                                 </div>
@@ -97,10 +99,10 @@ function DashBoardRecent() {
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167725/AGRICOL/Vegetable%20images/brinjal_ewudyw.jpg"} alt='card' />
                                     <h5 className="h5">Brinjal</h5>
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/Brinjal");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
 
                                 </div>
                             </div>
@@ -111,10 +113,10 @@ function DashBoardRecent() {
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167784/AGRICOL/Vegetable%20images/onion_csgzzw.jpg"} alt='card' />
                                     <h5 className="h5">Onion</h5>
                                     {/* <p className="card-text">{props.Degree}</p> */}
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/onion");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
                                    
                                 </div>
                             </div>
@@ -125,10 +127,10 @@ function DashBoardRecent() {
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/raddish_bnptsy.jpg"} alt='card' />
                                     <h5 className="h5">Raddish</h5>
                                     {/* <p className="card-text">{props.Degree}</p> */}
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/tomato");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
                                    
                                 </div>
                             </div>
@@ -139,10 +141,10 @@ function DashBoardRecent() {
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/groundnut_rhdkdd.jpg"} alt='card' />
                                     <h5 className="h5">GroundNut</h5>
                                     {/* <p className="card-text">{props.Degree}</p> */}
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/tomato");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
                                    
                                 </div>
                             </div>
@@ -153,10 +155,10 @@ function DashBoardRecent() {
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/beetroot_vlbh42.jpg"} alt='card' />
                                     <h5 className="h5">Beetroot</h5>
                                     {/* <p className="card-text">{props.Degree}</p> */}
-                                    <button onClick={()=>{
+                                    <Button variant='contained' onClick={()=>{
                                         navigate("/tomato");
-                                    }}>View
-                                    </button>
+                                    }}>View Details
+                                    </Button>
                                     
                                 </div>
                             </div>

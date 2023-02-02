@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap'); */
 *{
-    /* margin: 0%;
-    padding: 0%; */
+    margin: 0%;
+    padding: 0%;
     /* background-color: white; */
 }
 
@@ -11,8 +11,20 @@
     display: flex;
 }
 .nav-right {
-    float: right;
-    width: 60%;
+    /* float: right; */
+    width: 50%;
+    /* display: inline-block;
+    flex-wrap: nowrap; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+.navbar-getplan{
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* float: right; */
+  margin-top: 0px;
 }
 
 
@@ -34,15 +46,15 @@
 
  .nav-list{ 
     /* margin: 150px auto 0;  */
-    padding: 0; 
+    /* padding: 0; 
     list-style: none; 
-    display: table;
+    display: table; */
     /* width: 600px; */
     /* text-align: center; */
   }
   .nav-ele { 
     display: table-cell; 
-    position: relative; 
+    /* position: relative;  */
     padding: 15px 20px;
   }
   a {
@@ -83,7 +95,9 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 color: rgb(23, 92, 69);
   }
 
-.navbar-get-your-plan{
+/* .navbar-get-your-plan{
     float: right;
-}
+    display: flex;
+    flex-wrap: nowrap;
+} */
   

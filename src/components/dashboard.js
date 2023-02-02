@@ -8,15 +8,21 @@ import Footer from './footer';
 import Speed from'./speeddial';
 import Details from './details'
 import Stepper from './stepper';
+import GetPlan from './getplan';
 function Dashboard() {
     
     return(
         <>
         <div>
 
-            <div className="dashboard-Navbar">
+           <div className='dashboard-nav'>
+           <div className="dashboard-Navbar">
                 <Navbar/>
             </div>
+            <div className='dashboard-getplan'>
+                <GetPlan/>
+            </div>
+           </div>
             <div className='dashbaord-recent'>
                 <DashBoardRecent/>
             </div>

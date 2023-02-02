@@ -306,7 +306,12 @@
 
 // export default MenuBar;
 
+import { Button } from '@mui/material';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import CropPlan from './CropPlan';
+import Crop from './Crop';
+import GetPlan from './getplan';
 import './css/navbar.css'
 function Navbar(props) {
   // const menu = ["Home","About_us","Community","Customer_Support"]
@@ -314,7 +319,7 @@ function Navbar(props) {
   const menuse = [
     {
       page:"Home",
-      link:"/a"
+      link:"/"
     },
     {
       page:"About_us",
@@ -328,10 +333,10 @@ function Navbar(props) {
       page : "Customer_Support",
       link : "/d"
     },
-    {
-      page : "Get Plan",
-      link : "/ad"
-    }
+    // {
+    //   page : "Get Plan",
+    //   link : "/ad"
+    // }
   ]
   const menumap = menuse.map((props) => 
     <li className='nav-ele'><a className='nav-ele' href={props.link}>{props.page}</a></li>
@@ -341,6 +346,7 @@ function Navbar(props) {
     height : 75,
     width:105
   }
+  const navigate=useNavigate();
   return (
     <>
       <div className='navbar'>
@@ -353,12 +359,14 @@ function Navbar(props) {
           <div className='nav-right'>
             <ul className='nav-list'>
               <div className='nav-ele-link'>{menumap}</div>
+            
+            
             </ul>
-            <div className='navbar-get-your-plan'>
-              <a href='/a'>GET PLAN</a>
-            </div>
           </div>
         </nav>
+      </div>
+      <div className='navbar-getplan'>
+        {/* <GetPlan/> */}
       </div>
     </>
   );
