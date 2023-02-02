@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap'); */
 *{
-    margin: 0%;
-    padding: 0%;
+    /* margin: 0%;
+    padding: 0%; */
     /* background-color: white; */
 }
 
@@ -23,7 +23,7 @@
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: larger;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     /* padding: 40px; */

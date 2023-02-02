@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./navbar";
 import './css/tomato.css';
+import { useLocation } from "react-router-dom";
 
 function Tomato() {
+    const location= useLocation();
     return(
         <>
         <div className="tomato-navbar">
