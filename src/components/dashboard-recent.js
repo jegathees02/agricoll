@@ -98,7 +98,7 @@ function DashBoardRecent() {
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167725/AGRICOL/Vegetable%20images/brinjal_ewudyw.jpg"} alt='card' />
                                     <h5 className="h5">Brinjal</h5>
                                     <button onClick={()=>{
-                                        navigate("/Brinjal");
+                                        navigate("/brinjal");
                                     }}>View
                                     </button>
 

@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/onion" element={<Onion />} />
           <Route path="/tomato" element={<Tomato />} />
+          <Route path="/Brinjal" element={<Brinjal />} />
         </Routes>
       </Router>
     </div>
