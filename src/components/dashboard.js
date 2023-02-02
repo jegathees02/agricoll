@@ -7,7 +7,7 @@ import DashBoardRecent from './dashboard-recent';
 import Footer from './footer';
 import Speed from'./speeddial';
 import Details from './details'
-// import Stepper from './stepper';
+import Stepper from './stepper';
 function Dashboard() {
     
     return(
@@ -29,9 +29,9 @@ function Dashboard() {
             <div className='dashboard-footer'>
                 <Footer/>
             </div>
-            <div className='dashboard-Weather'>
-                {/* <Stepper/> */}
-            </div>
+            {/* <div className='dashboard-Weather'>
+                <Stepper/>
+            </div> */}
         </div>
         </>
     )

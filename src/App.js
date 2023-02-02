@@ -8,18 +8,21 @@ import Tomato from "./components/tomato";
 import Dashboard from "./components/dashboard";
 import Brinjal from "./components/brinjal";
 import Weather from "./components/weather";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-export default function App() {
+
+function App() {
   return (
     <div className="App">
-      {/* <NavigationBar/> */}
-      {/* <Weather/> */}
-      {/* <Dashboard/> */}
-      {/* <Onion /> */}
-      {/* <Tomato/> */}
-      <Brinjal/>
-      {/* <CropPlan/> */}
-      {/* <CropPlan/> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/onion" element={<Onion />} />
+          <Route path="/tomato" element={<Tomato />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
+
+export default App;
