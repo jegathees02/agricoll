@@ -20,6 +20,7 @@ function App() {
           <Route path="/onion" element={<Onion />} />
           <Route path="/tomato" element={<Tomato />} />
           <Route path="/Cropplan" element={<CropPlan/>} />
+          <Route path="/Brinjal" element={<Brinjal />} />
         </Routes>
       </Router>
     </div>
