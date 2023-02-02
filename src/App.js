@@ -6,7 +6,7 @@ import Onion from "./components/onion";
 import Tomato from "./components/tomato";
 // import Weather from "./components/pages/weather";
 import Dashboard from "./components/dashboard";
-
+import Brinjal from "./components/brinjal";
 import Weather from "./components/weather";
 
 export default function App() {
@@ -16,7 +16,8 @@ export default function App() {
       {/* <Weather/> */}
       {/* <Dashboard/> */}
       {/* <Onion /> */}
-      <Tomato/>
+      {/* <Tomato/> */}
+      <Brinjal/>
       {/* <CropPlan/> */}
       {/* <CropPlan/> */}
     </div>

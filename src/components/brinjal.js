@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import './css/tomato.css';
 
-function Tomato() {
+function  Brinjal() {
     return(
         <>
         <div className="tomato-navbar">
@@ -14,7 +14,7 @@ function Tomato() {
                     <h3>TOMATO</h3>
                 </div>
                 <div className="tomato-img">
-                    <img src="https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167504/AGRICOL/Vegetable%20images/tomato_t2wvjr.jpg"/>
+                    <img src="https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167725/AGRICOL/Vegetable%20images/brinjal_ewudyw.jpg"/>
                 </div>
                 <div className="tomato-card-contents">
                     <div className="tomato-botanical-name">
@@ -179,4 +179,4 @@ Before you begin the pasteurization process, I would recommend that you use a si
     )
     
 }
-export default Tomato;
+export default Brinjal;

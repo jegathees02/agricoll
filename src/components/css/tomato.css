@@ -1,20 +1,32 @@
 .tomato-card{
     border: 1px solid black;
     box-shadow: 3px 2px 20px 1px;
-    width: 50%;
+    width: 40%;
     margin-left: 25%;
     padding: 20px;
+    height: 40%;
+}
+/* .tomato-img{
+    width:20%;
+} */
+img{
+width: 50%;
+}
+.tomato-card-contents{
+    /* font-weight: 520; */
+    font-size: 10px;
+    font-style: italic;
 }
 .tomato-description{
     width: 80%;
     /* text-align: center; */
     margin-left: 10%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     margin-top: 10%;
     /* content: justify; */
     text-align: justify;
     font-weight: 520;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 /* h3 > tomato-description{
