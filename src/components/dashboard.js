@@ -9,6 +9,7 @@ import Speed from'./speeddial';
 import Details from './details'
 import Stepper from './stepper';
 import GetPlan from './getplan';
+import  Avatar  from './avatar';
 function Dashboard() {
     
     return(
@@ -22,6 +23,9 @@ function Dashboard() {
             <div className='dashboard-getplan'>
                 <GetPlan/>
             </div>
+           <div className="get-plan-avatar">
+              <Avatar/>
+              </div>
            </div>
             <div className='dashbaord-recent'>
                 <DashBoardRecent/>

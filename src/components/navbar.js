@@ -306,13 +306,14 @@
 
 // export default MenuBar;
 
-import { Button } from '@mui/material';
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CropPlan from './CropPlan';
 import Crop from './Crop';
 import GetPlan from './getplan';
-import './css/navbar.css'
+import './css/navbar.css';
+import Avatar from './avatar';
 function Navbar(props) {
   // const menu = ["Home","About_us","Community","Customer_Support"]
   // const link = ["1","1","1","1"]
@@ -346,7 +347,6 @@ function Navbar(props) {
     height : 75,
     width:105
   }
-  const navigate=useNavigate();
   return (
     <>
       <div className='navbar'>
@@ -358,16 +358,15 @@ function Navbar(props) {
           </div>
           <div className='nav-right'>
             <ul className='nav-list'>
-              <div className='nav-ele-link'>{menumap}</div>
-            
-            
+              <div className='nav-ele-link'>{menumap}
+              </div>
+             
+          
             </ul>
           </div>
         </nav>
       </div>
-      <div className='navbar-getplan'>
-        {/* <GetPlan/> */}
-      </div>
+      
     </>
   );
 }
