@@ -78,7 +78,7 @@ function DashBoardRecent() {
 
                 
                     <Row>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4} xs={1} className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167504/AGRICOL/Vegetable%20images/tomato_t2wvjr.jpg"} alt='card' />
@@ -94,7 +94,7 @@ function DashBoardRecent() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4} xs={1} className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167725/AGRICOL/Vegetable%20images/brinjal_ewudyw.jpg"} alt='card' />
@@ -107,7 +107,7 @@ function DashBoardRecent() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4} xs={1} className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167784/AGRICOL/Vegetable%20images/onion_csgzzw.jpg"} alt='card' />
@@ -121,7 +121,7 @@ function DashBoardRecent() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4} xs={1} className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/raddish_bnptsy.jpg"} alt='card' />
@@ -135,7 +135,7 @@ function DashBoardRecent() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4} xs={1} className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/groundnut_rhdkdd.jpg"} alt='card' />
@@ -149,7 +149,7 @@ function DashBoardRecent() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={8} md={4} className="dash-recent-card">
+                        <Col sm={8} md={4}  className="dash-recent-card">
                             <div className="card" style={{ width: '18rem' }}>
                                 <div className="card-body">
                                     <img className="recent-card-img" style={ImageSize} src={"https://res.cloudinary.com/dkmm9khbp/image/upload/v1675167519/AGRICOL/Vegetable%20images/beetroot_vlbh42.jpg"} alt='card' />

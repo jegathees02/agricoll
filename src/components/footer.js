@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconName } from "react-icons/";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function App() {
