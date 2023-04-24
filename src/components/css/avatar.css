@@ -1,0 +1,28 @@
+body {
+  padding: 20px;
+}
+body #app {
+  /* border: 3px solid #e3e3e3;
+  border-radius: 4px; */
+  padding: 2px;
+}
+.avatar_img {
+  height: 30%;
+  width: 30%;
+  /* border: 10px solid black; */
+}
+body #app .card {
+  width: 250px;
+}
+body #app #circle-avatar {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffbd30;
+  place-items: center;
+}
+body #app #circle-avatar span {
+  font-size: 48px;
+  font-weight: bold;
+}
