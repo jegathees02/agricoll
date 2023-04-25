@@ -11,7 +11,7 @@ function GetPlan() {
         <div>
 
               <div>
-              <Button variant='contained' color='success' onClick={()=>{navigate("/cropplan")}}>GET PLAN
+              <Button  style={{width:105}}variant='contained' color='success' onClick={()=>{navigate("/cropplan")}}>GET PLAN
               </Button>
               </div>
              

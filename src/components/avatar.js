@@ -4,10 +4,11 @@ import { PopupMenu } from "react-simple-widgets";
 export default function Avatar() {
   return (
     <div id="app">
-      <div className="text-end">
-        <PopupMenu>
+      <div className="">
+    
+        <PopupMenu >
           {/* <button className="btn btn-primary"> */}
-            <img className="avatar_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpThzhMB0Esd2PRg2vHdy8YdMQqD6C0daU8w&usqp=CAU" />
+            <img className="avatar_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpThzhMB0Esd2PRg2vHdy8YdMQqD6C0daU8w&usqp=CAU"style={{cursor: 'pointer'}} />
           {/* // </button> */}
 
           <div className="card text-start">

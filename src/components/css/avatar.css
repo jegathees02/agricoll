@@ -8,11 +8,11 @@ body #app {
 }
 .avatar_img {
   height: 30%;
-  width: 30%;
+  width: 33%;
   /* border: 10px solid black; */
 }
 body #app .card {
-  width: 250px;
+  width: 300px;
 }
 body #app #circle-avatar {
   display: grid;

@@ -3,12 +3,11 @@ import './css/stepper.css'
 import {
     Typography,
     TextField,
-    
     Stepper,
     Step,
     StepLabel,
 } from "@material-ui/core";
-import { Button, IconButton, ButtonGroup, ButtonToolbar } from 'rsuite';
+import { Button} from 'rsuite';
 import { makeStyles } from "@material-ui/core/styles";
 import {
     useForm,
@@ -16,6 +15,7 @@ import {
     FormProvider,
     useFormContext,
 } from "react-hook-form";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -24,11 +24,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
+   
     return [
         "Basic information",
         "Contact Information",
         "Personal Information",
-        "Payment",
+    
     ];
 }
 const BasicForm = () => {
@@ -63,6 +64,7 @@ const BasicForm = () => {
                         fullWidth
                         margin="normal"
                         {...field}
+                        
                     />
                 )}
             />
@@ -190,64 +192,63 @@ const PersonalForm = () => {
         </>
     );
 };
-const PaymentForm = () => {
-    const { control } = useFormContext();
-    return (
-        <>
-            <Controller
-                control={control}
-                name="cardNumber"
-                render={({ field }) => (
-                    <TextField
-                        id="cardNumber"
-                        label="Card Number"
-                        variant="outlined"
-                        placeholder="Enter Your Card Number"
-                        fullWidth
-                        margin="normal"
-                        {...field}
-                    />
-                )}
-            />
-            <Controller
-                control={control}
-                name="cardMonth"
-                render={({ field }) => (
-                    <TextField
-                        id="cardMonth"
-                        label="Card Month"
-                        variant="outlined"
-                        placeholder="Enter Your Card Month"
-                        fullWidth
-                        margin="normal"
-                        {...field}
-                    />
-                )}
-            />
-            <Controller
-                control={control}
-                name="cardYear"
-                render={({ field }) => (
-                    <TextField
-                        id="cardYear"
-                        label="Card Year"
-                        variant="outlined"
-                        placeholder="Enter Your Card Year"
-                        fullWidth
-                        margin="normal"
-                        {...field}
-                    />
-                )}
-            />
-        </>
-    );
-};
+// const PaymentForm = () => {
+//     const { control } = useFormContext();
+//     return (
+//         <>
+//             <Controller
+//                 control={control}
+//                 name="cardNumber"
+//                 render={({ field }) => (
+//                     <TextField
+//                         id="cardNumber"
+//                         label="Card Number"
+//                         variant="outlined"
+//                         placeholder="Enter Your Card Number"
+//                         fullWidth
+//                         margin="normal"
+//                         {...field}
+//                     />
+//                 )}
+//             />
+//             <Controller
+//                 control={control}
+//                 name="cardMonth"
+//                 render={({ field }) => (
+//                     <TextField
+//                         id="cardMonth"
+//                         label="Card Month"
+//                         variant="outlined"
+//                         placeholder="Enter Your Card Month"
+//                         fullWidth
+//                         margin="normal"
+//                         {...field}
+//                     />
+//                 )}
+//             />
+//             <Controller
+//                 control={control}
+//                 name="cardYear"
+//                 render={({ field }) => (
+//                     <TextField
+//                         id="cardYear"
+//                         label="Card Year"
+//                         variant="outlined"
+//                         placeholder="Enter Your Card Year"
+//                         fullWidth
+//                         margin="normal"
+//                         {...field}
+//                     />
+//                 )}
+//             />
+//         </>
+//     );
+// };
 
 
 
 const LinaerStepper = () => {
-    const classes = useStyles({}
-    );
+    
     const methods = useForm({
         defaultValues: {
             firstName: "",
@@ -269,7 +270,7 @@ const LinaerStepper = () => {
     const steps = getSteps();
 
     const isStepOptional = (step) => {
-        return step === 1 || step === 2;
+        return step === 1;
     };
 
     const isStepSkipped = (step) => {
@@ -278,14 +279,16 @@ const LinaerStepper = () => {
 
     const handleNext = (data) => {
         console.log(data);
-        if (activeStep == steps.length - 1) {
-            fetch("https://jsonplaceholder.typicode.com/comments")
-                .then((data) => data.json())
-                .then((res) => {
-                    console.log(res);
-                    setActiveStep(activeStep + 1);
-                });
-        } else {
+        if (activeStep === steps.length - 1) {
+            // fetch("https://jsonplaceholder.typicode.com/comments")
+            //     .then((data) => data.json())
+            //     .then((res) => {
+            //         console.log(res);
+            //         setActiveStep(activeStep + 1);
+            //     });
+            setActiveStep(activeStep + 1);
+        } 
+        else {
             setActiveStep(activeStep + 1);
             setSkippedSteps(
                 skippedSteps.filter((skipItem) => skipItem !== activeStep)
@@ -315,16 +318,15 @@ const LinaerStepper = () => {
         paddingTop: 40,
         paddingBottom: 60
     }
-    const stepper = {
-        // paddingTop: 40,
-    }
+    
 
     // const onSubmit = (data) => {
     //   console.log(data);
     // };
+    const navigate=useNavigate();
     return (<div className="Login">
 
-        <img className='nav-img-1' style={size} src='https://res.cloudinary.com/duc6xzza7/image/upload/v1682399725/logo_zq206q.png' alt='img' />
+        <img className='nav-img-1' style={size} src='https://res.cloudinary.com/duc6xzza7/image/upload/v1682430249/logo_b0q0ba.png' alt='img' />
         <div style={inp}>
 
 
@@ -336,25 +338,23 @@ const LinaerStepper = () => {
                             <div style={button}>
 
                                 <Button
-                                    className={classes.button}
+                                    
+                                    style={{padding:5,paddingRight:15,paddingLeft:15 ,border:'none',borderRadius:4}}
                                     disabled={activeStep === 0}
                                     onClick={handleBack}
+                                    // className="click"
                                 >
                                     back
                                 </Button>
                                 {isStepOptional(activeStep) && (
                                   
-                                    <ButtonToolbar>
-                                    <Button color="primary" appearance="ghost">
+                                    
+                                    <Button style={{backgroundColor:'#3CB373',padding:5,paddingRight:15,paddingLeft:15 ,border:'none',marginLeft:15,borderRadius:4}} onClick={handleSkip}>
                                         Skip
                                     </Button>
-                                    </ButtonToolbar>
-                                    
-                                      
-                                   
                                 )}
                                 <Button
-                                    className={classes.button}
+                                   style={{backgroundColor:'#3CB373',padding:5 ,paddingRight:15,paddingLeft:15,border:'none',marginLeft:15,borderRadius:4}}
                                     variant="contained"
                                     color="primary"
                                     // onClick={handleNext}
@@ -365,13 +365,7 @@ const LinaerStepper = () => {
                             </div>
                         </form>
                     </FormProvider>
-                </>
-            ) : (
-                <Typography variant="h3" align="center">
-                    Thank You
-                </Typography>
-            )}
-            <Stepper alternativeLabel activeStep={activeStep} >
+                     <Stepper alternativeLabel activeStep={activeStep} style={{color:"green"}}   >
                 {steps.map((step, index) => {
                     const labelProps = {};
                     const stepProps = {};
@@ -390,16 +384,33 @@ const LinaerStepper = () => {
                         stepProps.completed = false;
                     }
                     return (
-                        <Step {...stepProps} key={index} >
-                            <StepLabel {...labelProps} >{step}</StepLabel>
+                        <Step {...stepProps} key={index} style={{color:"green"}}>
+                            <StepLabel {...labelProps} style={{color:"green"}}>{step}</StepLabel>
                         </Step>
                     );
                 })}
             </Stepper>
+            <h3 style={{color:"green"}}>{Math.round((activeStep/3)*100)} %</h3>
+                </>
+                
+            ) : (
+                    <div>
+                <Typography variant="h3" align="center" style={{paddingTop:160}}>
+                    Thank You
+                {/* {alert("Signup Successfully")} */}
+               { navigate('/dashboard')}
+                </Typography>
+                
+</div>
+
+)}
+           
         </div>
+        
     </div>
 
     );
+    
     function getStepContent(step) {
         switch (step) {
             case 0:
@@ -409,8 +420,7 @@ const LinaerStepper = () => {
                 return <ContactForm />;
             case 2:
                 return <PersonalForm />;
-            case 3:
-                return <PaymentForm />;
+          
             default:
                 return "unknown step";
         }
