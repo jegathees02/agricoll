@@ -8,9 +8,7 @@
 .nav-left{
     /* width: 20%; */
     float: left;
-    /* float: top; */
-    padding-top: 10px;
-    /* display: flex; */
+    display: flex;
 }
 .nav-right {
     /* float: right; */
@@ -53,9 +51,6 @@
     display: table; */
     /* width: 600px; */
     /* text-align: center; */
-  }
-  .nav-right{
-    padding-left: 100px;
   }
   .nav-ele { 
     display: table-cell; 

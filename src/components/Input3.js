@@ -3,12 +3,11 @@ import './css/stepper.css'
 import {
     Typography,
     TextField,
-    
+    Button,
     Stepper,
     Step,
     StepLabel,
 } from "@material-ui/core";
-import { Button, IconButton, ButtonGroup, ButtonToolbar } from 'rsuite';
 import { makeStyles } from "@material-ui/core/styles";
 import {
     useForm,
@@ -246,8 +245,7 @@ const PaymentForm = () => {
 
 
 const LinaerStepper = () => {
-    const classes = useStyles({}
-    );
+    const classes = useStyles();
     const methods = useForm({
         defaultValues: {
             firstName: "",
@@ -311,12 +309,27 @@ const LinaerStepper = () => {
     const inp = {
         paddingTop: 100,
     }
-    const button = {
+    const stepper = {
         paddingTop: 40,
         paddingBottom: 60
     }
-    const stepper = {
-        // paddingTop: 40,
+    const button = {
+        padding: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        borderRadius: 7,
+        border: 'none',
+        marginLeft: 20,
+        backgroundColor: 'lightgreen'
+    }
+    const buttonback = {
+        padding: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        borderRadius: 7,
+        border: 'none',
+        marginLeft: 20,
+
     }
 
     // const onSubmit = (data) => {
@@ -324,7 +337,7 @@ const LinaerStepper = () => {
     // };
     return (<div className="Login">
 
-        <img className='nav-img-1' style={size} src='https://res.cloudinary.com/duc6xzza7/image/upload/v1682399725/logo_zq206q.png' alt='img' />
+        <img className='nav-img-1' style={size} src='https://res.cloudinary.com/dkmm9khbp/image/upload/v1673664349/AGRICOL/Agricol_logo_xrjeam.png' alt='img' />
         <div style={inp}>
 
 
@@ -333,35 +346,31 @@ const LinaerStepper = () => {
                     <FormProvider {...methods}>
                         <form onSubmit={methods.handleSubmit(handleNext)}>
                             {getStepContent(activeStep)}
-                            <div style={button}>
+                            <div style={stepper}>
 
-                                <Button
-                                    className={classes.button}
+                                <button
+                                    style={buttonback}
+
                                     disabled={activeStep === 0}
                                     onClick={handleBack}
                                 >
                                     back
-                                </Button>
+                                </button>
                                 {isStepOptional(activeStep) && (
-                                  
-                                    <ButtonToolbar>
-                                    <Button color="primary" appearance="ghost">
-                                        Skip
-                                    </Button>
-                                    </ButtonToolbar>
-                                    
-                                      
-                                   
+                                    <button
+                                        style={button}
+                                        onClick={handleSkip}>
+                                        skip
+                                    </button>
                                 )}
-                                <Button
-                                    className={classes.button}
-                                    variant="contained"
-                                    color="primary"
-                                    // onClick={handleNext}
-                                    type="submit"
+                                <button
+                                    style={button}
+
+                                // onClick={handleNext}
+
                                 >
                                     {activeStep === steps.length - 1 ? "Finish" : "Next"}
-                                </Button>
+                                </button>
                             </div>
                         </form>
                     </FormProvider>

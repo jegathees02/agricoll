@@ -5,7 +5,6 @@
 }
 .dashboard-nav{
     display: flex;
-    margin-top: -20px;
 }
 .dashboard-nav::after{
     display: none;
@@ -19,12 +18,11 @@
     
 }
 .dashboard-getplan{
-    /* display: flex; */
+    display: flex;
     /* align-items: center; */
-    /* float: right; */
-    margin-left: 11%;
-    margin-top: 2.5%;
-    /* padding-left: 20px; */
+    float: right;
+    margin-left: 3%;
+    margin-top: 2%;
 }
 
 .dashbaord-recent {
@@ -40,7 +38,6 @@
     border: 1px solid black;
 }
 .get-plan-avatar{
-    margin-top: 2.5%;
-    padding: 0%;
-    /* width: 50px; */
+    margin-top: 2%;
+    padding-left: 2%;
 }
