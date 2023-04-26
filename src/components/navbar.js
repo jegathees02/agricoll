@@ -345,16 +345,17 @@ function Navbar(props) {
   )
   const size = {
     height : 75,
-    width:105
+    width:105,
+    // paddingTop:10
   }
   return (
     <>
       <div className='navbar'>
         <nav className='nav-main'>
           <div className='nav-left'>
-          <img className='nav-img-1' style={size} src='https://res.cloudinary.com/dkmm9khbp/image/upload/v1673664349/AGRICOL/Agricol_logo_xrjeam.png'  alt='img'/>
+          <img className='nav-img-1' style={size} src='https://res.cloudinary.com/duc6xzza7/image/upload/v1682430249/logo_b0q0ba.png'  alt='img'/>
           {/* <img className='nav-img-2' style={size} src='https://res.cloudinary.com/dkmm9khbp/image/upload/v1673975592/AGRICOL/coollogo_com-11870614_u0qiqj.png'  alt='img'/> */}
-           <h2 className='heading'>Agricol</h2>
+           {/* <h2 className='heading'>Agricol</h2> */}
           </div>
           <div className='nav-right'>
             <ul className='nav-list'>
