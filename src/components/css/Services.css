@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+    height: 80vh;
+    background-color: greenyellow;
+    display: flex;
+}
+.img1{
+    background-color: green;
+    width: 50%;
+}
+.cont1{
+    width: 50%;
+}
