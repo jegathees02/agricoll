@@ -1,4 +1,5 @@
 import "./styles.css";
+import Login from "./LoginPages/login";
 import NavigationBar from "./components/navbar";
 // import CropPlan from "./components/CropPlan";
 import CropPlan from "./components/CropPlan";
@@ -17,8 +18,9 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/" element={<Input/>} />
+          <Route path="/input" element={<Input/>} />
           <Route path="/onion" element={<Onion />} />
           <Route path="/tomato" element={<Tomato />} />
           <Route path="/Cropplan" element={<CropPlan/>} />
